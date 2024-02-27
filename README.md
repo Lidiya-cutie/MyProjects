@@ -3,5 +3,5 @@
 .
 | № | Название проекта      | Описание        | Навыки и инструменты        |
 | --| ----------- | ----------- | ----------- |
-| **1** | **Value B** | **Value C** | **Value D** |
+| **1** | [**Анализ резюме из HeadHunter**](https://github.com/Lidiya-cutie/project_HH) | **Value C** | **Value D** |
 | **2** | **Value F** | **Value G** | **Value H** |
