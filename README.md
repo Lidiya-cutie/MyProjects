@@ -1,28 +1,64 @@
-В репозитории собраны проекты по Data Science / ML / MLOps: от учебных ноутбуков до production-ориентированных пайплайнов.
-Источники данных (CSV и датасеты), использованные в исследованиях, прилагаются к соответствующим репозиториям.
+# Lidiya Korotkova · ML Engineering & MLOps Portfolio
 
-| № | Название проекта | Описание | Навыки и инструменты |
-| -- | ----------- | ----------- | ----------- |
-| **1** | [**MiMo Telegram Bot**](https://github.com/Lidiya-cutie/mimo-telegram-bot) | **Telegram-бот на aiogram 3.x (MiMo-V2.5 через OpenRouter): ask/research/code, Hermes-память SQLite+FTS5, Docker/systemd, ACL и редакция секретов** | **Python, aiogram, OpenRouter, Docker Compose, systemd, SQLite/FTS5, httpx, GitHub Actions** |
-| **2** | [**MCP Context Pipeline**](https://github.com/Lidiya-cutie/mcp-context-pipeline) | **ML-пайплайн управления контекстом для MCP: PII-маскирование (Presidio + РФ), сжатие контекста, 31 MCP-сервер и ~61 навык, NiceGUI-консоль, итеративная коррекция (F1/drift), eval-гейты (external knowledge / REST API) и experiment harness** | **Python, MCP, Docker Compose, Redis, PostgreSQL, Presidio, spaCy, NiceGUI, httpx, Tiktoken, Anthropic/OpenAI/OpenRouter, Context7, GitHub Actions, pytest, Xray/VLESS, MLOps, eval metrics (F1, MRR, Recall@K)** |
-| **3** | [**Wine Enthusiast Analysis**](https://github.com/Lidiya-cutie/WineEnthusiastAnalysis) | **Анализ и подготовка данных Wine Enthusiast (~130k обзоров вин) для прогностической модели оценки вин: EDA, очистка, структура data/notebooks/scripts/models** | **Python, Pandas, Jupyter, EDA, предобработка данных, Kaggle, визуализация, scikit-learn** |
-| **4** | [**GLM-Image Pipeline**](https://github.com/Lidiya-cutie/glm-image-pipeline) | **Каркас GLM-Image (AR→VQ→DiT) + production SDXL API (FastAPI/Docker) и category-пайплайны рекламных баннеров (tobacco, alcomarket, bankruptcy, folk, lombard, trust, baby, discreditation, circular); медиа вне git через DATA_ROOT** | **Python, PyTorch, Diffusers, SDXL, Transformers, FastAPI, Uvicorn, Docker Compose, Pillow, YAML, CUDA, MLOps, OCR/QR overlays** |
-| **5** | [**Qwen2-VL Inference Pipeline**](https://github.com/Lidiya-cutie/qwen2-vl-inference-pipeline) | **Мультимодальный пайплайн на Qwen2-VL-7B-Instruct: single/batch инференс изображений, категоризация и ключевые слова на русском, resume CSV-экспорт** | **Python, PyTorch, Transformers, Qwen2-VL, qwen-vl-utils, Pillow, Pandas, CUDA, Computer Vision, Multimodal LLM** |
-| **6** | [**Custom QR Code Generator**](https://github.com/Lidiya-cutie/custom-qr-generator) | **Python-пакет кастомных QR-кодов: стили модулей, градиенты, логотип, batch/CSV, CLI и API, интеграция в баннерные/GLM-пайплайны** | **Python, qrcode, Pillow, click, pydantic, numpy, GitHub Actions** |
-| **7** | [**Машинное обучение в работе с извлечением текста и категоризацией контента**](https://github.com/Lidiya-cutie/multimodal-analyze) | **Разработка модели ИИ для обработки изображений с мультимодальным анализом** | **Python, Pandas, Qwen2-VL, CLIP, SentenceTransformer, FastText, Llama 3.1, PyTorch, CUDA, Transformers, Gensim, Seaborn, Matplotlib, sklearn** |
-| **8** | [**Машинное обучение в маркетинге**](https://github.com/Lidiya-cutie/moderation-ai-project) | **Разработка модели ИИ для категоризации рекламных баннеров** | **Python, Pandas, torch, ultralytics, opencv, roboflow, linux, CVAT, ComfyUI, Cod-x, Comet ML, Qwen, Selenium, sklearn, OCR, git, PILLOW, shutil, ast, requests, bs4, Scrum, Agile** |
-| **9** | **Машинное обучение в маркетинге** | **Разработка модели ИИ для выявления битых кабинетов на рекламных билбордах** | **Python, Pandas, torch, torchvision, ultralytics, opencv, roboflow, git** |
-| **10** | [**Пайплайн для переобучения ML-моделей с поддержкой балансировки и тюнинга**](https://github.com/Lidiya-cutie/Retrain-Model-Project) | **Универсальный инструмент для дообучения моделей с поддержкой балансировки классов, тюнинга гиперпараметров и логирования экспериментов** | **Python, Pandas, Scikit-learn, XGBoost, LightGBM, Optuna, Comet ML, Matplotlib, Seaborn, Joblib, Internal-learn, Argparse, Git** |
-| **11** | [**Анализ резюме из HeadHunter**](https://github.com/Lidiya-cutie/project_HH) | **Преобразование, исследование и очистка данных компании HeadHunter для последующего построения модели, которая смогла бы автоматически определять примерный уровень заработной платы, подходящей пользователю, исходя из информации, которую он указал о себе.** | **Предобработка данных, Исследовательский АД, One Hot Encoding, Визуализация, Python, Pandas, Matplotlib, Plotly** |
-| **12** | [**Построение рекомендательной системы content-based model**](https://github.com/Lidiya-cutie/Mini_project_model_Netflix) | **Построение рекомендательной системы на основе контента, где необходимо: 1) для каждого продукта создать характеризующие его признаки, 2) найти показатель близости между всеми продуктами, 3) порекомендовать пользователю продукты, которые показывают наибольшую близость с теми продуктами, которые он высоко оценил.** | **Python, Pandas, sklearn, Рекомендательные системы, Term Frequency-Inverse Document Frequency подход** |
-| **13** | [**Классификация клиентов, более склонных к открытию депозита в банке**](https://github.com/Lidiya-cutie/project_4) | **Построение модели машинного обучения, которая на основе предложенных характеристик клиента будет предсказывать, воспользуется он предложением об открытии депозита или нет.** | **Предобработка данных, Исследовательский АД, Визуализация, Python, Pandas, Кодирование признаков, Seaborn, Matplotlib, Plotly, sklearn, GridSearchCV, SelectKBest, optuna, Оценка мультиколлинеарности, LogisticRegression, DecisionTreeClassifier, RandomForestClassifier** |
-| **14** | [**Оптимизация гиперпараметров для прогнозирования биологического ответа (от Kaggle)**](https://github.com/Lidiya-cutie/ML-model/blob/master/Korotkova-predicting-a-biologicalresponse-using-optimization.ipynb) | **Цель конкурса - помочь нам построить как можно более качественную модель, чтобы мы могли, насколько позволяют эти данные, оптимально соотнести молекулярную информацию с реальным биологическим ответом.** | **Предобработка данных, EDA, Визуализация, Python, Pandas, Seaborn, Matplotlib, sklearn, Linear models, Decision trees, Ensembles, LogisticRegression, RandomizedSearchCV** |
-| **15** | [**Использование SQL-запросов для исследования датасета на примере данных с сайта OZON**](https://github.com/Lidiya-cutie/SQL-theory-practice/blob/master/Korotkova_db_connect.ipynb) | **Исследование данных с использованием SQL-запросов для исследования датасета ([презентация](https://docs.google.com/presentation/d/1RVL0eCnrqeJXFDIlkrTgQyWgJiX5jHtM-LH8wSbvKs0/edit#slide=id.p))** | **Python Pandas SQL DBeaver sqlite3 Работа с базами данных** |
-| **16** | [**Телеграм-бот Lidiya-cutie**](https://github.com/Lidiya-cutie/bots) | **Проектирование телеграм-бота, который способен на разные действия ([презентация](https://docs.google.com/presentation/d/1UHj52asd8m9bF5LkKMDC3WDCLCXQnTbCjIWqSbcITd4/edit#slide=id.g242e4b549b4_0_1)).** | **Python aiogram keyboard random** |
-| **17** | [**Разработка продуктовых метрик для отеля в Екатеринбурге**](https://github.com/Lidiya-cutie/Project-on-Product-Analytics/blob/master/README.md) | **Разработка продуктовых метрик, чтобы показать, что получит отель от внедрения CV ([презентация](https://docs.google.com/presentation/d/1ZQx3f_KgWAjD7DIhfLFL1PNJWk571yPuQXX5sHZzx0A/edit#slide=id.p)).** | **Продуктовая аналитика Метрики продукта** |
-| **18** | [**Машинное обучение в нефтедобыче: определение места бурения скважины**](https://github.com/Lidiya-cutie/Diplom_SF) | **Построение модели машинного обучения, которая поможет определить регион, где добыча принесёт наибольшую прибыль. Анализ возможной прибыли и рисков техникой Bootstrap.** | **Python Pandas Seaborn Matplotlib sklearn StandardScaler LinearRegression Bootstrap Предсказание модели** |
-| **19** | [**Классификация на примере воды**](https://github.com/Lidiya-cutie/ML-model/blob/master/Testing_for_water.ipynb) | **Решение задачи классификации на примере воды: пригодная и непригодная для питья на основе её химического состава.** | **Python Pandas Numpy sklearn линейные модели DecisionTreeClassifier Кросс-валидация Leave-one-out Стратифицированное разбиение Сэмплирование PR-кривая (precision-recall curve) Overfitting (переобучение) и Underfitting (недообучение)** |
-| **20** | [**Анализ вакансий из HeadHunter**](https://github.com/Lidiya-cutie/DS_SkillFactory/blob/main/Project_2_Короткова_ЛС.ipynb) | **Использование SQL-запросов (PostgreSQL) для анализа вакансий из HeadHunter.** | **Исследовательский АД Python Pandas SQL PostgreSQL Работа с базами данных** |
-| **21** | [**Построение модели на примере данных о домах в Бостоне**](https://github.com/Lidiya-cutie/ML-model/blob/master/ML_Boston.ipynb) | **Создание модели линейной регрессии на примере датасета из библиотеки seaborn.** | **Python Pandas Numpy Seaborn Matplotlib sklearn LinearRegression Визуализация** |
-| **22** | [**Построение ML-модели для прогнозирования потребности велосипедов для проката в Корее за год**](https://github.com/Lidiya-cutie/Bicycle-rental-in-Korea) | **Изучение данных и выявление факторов, влияющих на спрос велосипедов.** | **Предобработка данных EDA Визуализация Python Pandas Numpy Seaborn Matplotlib sklearn PolynomialFeatures StandardScaler LinearRegression Предсказание модели Feature Selection HyperOpt Phik Матрица корреляции Работа с datetime Кодировка признаков с помощью sin и cos Get dummies Бейзлайн модель регрессии RandomForestRegressor GradientBoosting GridSearchCV Pipeline** |
-| **23** | [**Python для анализа и очистки данных**](https://github.com/Lidiya-cutie/DATACLEANINGPROJECT) | **Очистка данных на примере датасета о квартирах в Москве.** | **Предобработка данных Исследовательский АД Python Pandas Методы обработки пропусков** |
+Chief Data Officer at an IT company (Moscow), hands-on in MLOps, LLM serving and agentic systems.
+Based in Moscow, open to relocation.
+
+[LinkedIn](https://www.linkedin.com/in/lidiya-korotkova-a363b5274) · [Email](mailto:Lidushehca@mail.ru)
+
+> My production work at an IT company is confidential and is not published here. The repositories below are personal projects or public, non-confidential versions of applied work.
+
+---
+
+## What I build at work (not public)
+
+- **Self-hosted MLOps platform**: Ansible and Docker Compose; NVIDIA Triton Inference Server with a vLLM backend, ClearML, MLflow, MinIO, Keycloak and JupyterHub on RTX 4090 GPUs; Grafana and Zabbix monitoring.
+- **LLM serving under tight GPU memory**: Gemma 3 27B in 4-bit AWQ on 24 GB GPUs; Qwen3-8B in bf16 with vLLM; NVIDIA MPS for GPU sharing.
+- **Evaluated RAG** (department project): on a 40-question control run, raising the context limit from 512 to 1024 tokens took factual hallucinations from 6 to 0.
+- **Production ad classifier** (department project): multi-label classification across 48+ regulated categories.
+
+---
+
+## Featured projects
+
+| Project | What it shows | Stack |
+| --- | --- | --- |
+| [**MCP Context Pipeline**](https://github.com/Lidiya-cutie/mcp-context-pipeline) | Context management for MCP applications: PII masking with Presidio plus Russian-specific entities (84 tests, 0 leaks in the reference run), context compression, 31 MCP servers, an iterative generate → measure → hint → regenerate loop, and eval gates in CI (Recall@K ≥ 0.60, MRR ≥ 0.45, p95 ≤ 8 s). | Python, MCP, Presidio, Redis, PostgreSQL, NiceGUI, Docker Compose, pytest, GitHub Actions |
+| [**Oil well region selection**](https://github.com/Lidiya-cutie/Diplom_SF) | Risk-aware ML: bootstrap profit, 95% CI, loss probability and CVaR; a data-quality check that flags target leakage in the "winning" region; data versioning and experiment tracking. | Python, scikit-learn, DVC, MinIO, MLflow, GitHub Actions |
+| [**Qwen2-VL inference pipeline**](https://github.com/Lidiya-cutie/qwen2-vl-inference-pipeline) | Batch multimodal inference with resume from CSV, rule-based category mapping and keyword extraction. | Python, PyTorch, Transformers, Qwen2-VL, CUDA |
+| [**GLM-Image / SDXL pipeline**](https://github.com/Lidiya-cutie/glm-image-pipeline) | Image-generation serving with auth, rate limiting, concurrency limits and health checks; category-specific banner generators. | Python, PyTorch, Diffusers, SDXL, FastAPI, Docker Compose |
+| [**Model retraining pipeline**](https://github.com/Lidiya-cutie/Retrain-Model-Project) | Retraining with class balancing, Optuna tuning and experiment logging. | scikit-learn, XGBoost, LightGBM, Optuna, Comet ML |
+
+## Applied computer vision (public versions)
+
+| Project | Description |
+| --- | --- |
+| [Ad banner categorization](https://github.com/Lidiya-cutie/moderation-ai-project) | YOLO training and auto-annotation, Qwen-VL helpers, CVAT-based labeling. |
+| [Text extraction and content categorization](https://github.com/Lidiya-cutie/multimodal-analyze) | Multimodal analysis with Qwen2-VL, CLIP and sentence embeddings. |
+
+## Tools
+
+| Project | Description |
+| --- | --- |
+| [MiMo Telegram Bot](https://github.com/Lidiya-cutie/mimo-telegram-bot) | aiogram bot with OpenRouter, SQLite/FTS5 memory, Docker and systemd deployment. |
+| [Custom QR Code Generator](https://github.com/Lidiya-cutie/custom-qr-generator) | Python package for styled QR codes with logos, batch mode, CLI and API. |
+
+<details>
+<summary><b>Coursework, 2022–2023</b> (SkillFactory, Mathshub)</summary>
+
+| Project | Topic |
+| --- | --- |
+| [Bank deposit classification](https://github.com/Lidiya-cutie/project_4) | Classification, feature selection, Optuna |
+| [Seoul bike rental demand](https://github.com/Lidiya-cutie/Bicycle-rental-in-Korea) | Feature engineering, regression, Hyperopt |
+| [Biological response prediction (Kaggle)](https://github.com/Lidiya-cutie/ML-model/blob/master/Korotkova-predicting-a-biologicalresponse-using-optimization.ipynb) | Hyperparameter optimization |
+| [Water potability](https://github.com/Lidiya-cutie/ML-model/blob/master/Testing_for_water.ipynb) | Cross-validation, PR curves |
+| [Boston housing](https://github.com/Lidiya-cutie/ML-model/blob/master/ML_Boston.ipynb) | Linear regression |
+| [Content-based recommender](https://github.com/Lidiya-cutie/Mini_project_model_Netflix) | TF-IDF |
+| [Wine reviews analysis](https://github.com/Lidiya-cutie/WineEnthusiastAnalysis) | EDA on ~130k reviews |
+| [HeadHunter resumes](https://github.com/Lidiya-cutie/project_HH) | EDA, salary prediction |
+| [HeadHunter vacancies](https://github.com/Lidiya-cutie/DS_SkillFactory/blob/main/Project_2_Короткова_ЛС.ipynb) | SQL on PostgreSQL |
+| [OZON data with SQL](https://github.com/Lidiya-cutie/SQL-theory-practice/blob/master/Korotkova_db_connect.ipynb) | SQL analysis |
+| [Hotel product metrics](https://github.com/Lidiya-cutie/Project-on-Product-Analytics/blob/master/README.md) | Product analytics |
+| [Data cleaning](https://github.com/Lidiya-cutie/DATACLEANINGPROJECT) | Missing values, preprocessing |
+| [Telegram bot](https://github.com/Lidiya-cutie/bots) | aiogram |
+
+</details>
