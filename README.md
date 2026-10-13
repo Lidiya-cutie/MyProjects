@@ -1,11 +1,11 @@
 # Lidiya Korotkova · ML Engineering & MLOps Portfolio
 
-Chief Data Officer at an IT company (Moscow), hands-on in MLOps, LLM serving and agentic systems.
+Chief Data Officer at MCDis (Moscow), hands-on in MLOps, LLM serving and agentic systems.
 Based in Moscow, open to relocation.
 
 [LinkedIn](https://www.linkedin.com/in/lidiya-korotkova-a363b5274) · [Email](mailto:Lidushehca@mail.ru)
 
-> My production work at an IT company is confidential and is not published here. The repositories below are personal projects or public, non-confidential versions of applied work.
+> My production work at MCDis is confidential and is not published here. The repositories below are personal projects or public, non-confidential versions of applied work.
 
 ---
 
@@ -62,3 +62,4 @@ Based in Moscow, open to relocation.
 | [Telegram bot](https://github.com/Lidiya-cutie/bots) | aiogram |
 
 </details>
+
